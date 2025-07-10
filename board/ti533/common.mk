@@ -1,0 +1,35 @@
+
+#
+#config file for sun55iw6
+#
+SUPPORT_BOARD=ti533
+ARCH = arm
+PLATFORM = sun55iw6p1
+CFG_FPGA_PLATFORM=y
+
+CFG_BOOT0_RUN_ADDR=0x44000
+CFG_SYS_INIT_RAM_SIZE=0x10000
+CFG_FES1_RUN_ADDR=0x4c000
+#need fix
+CFG_SBOOT_RUN_ADDR=0x44480
+
+#gpio
+CFG_SUNXI_GPIO_V2=y
+
+#chipid
+CFG_SUNXI_CHIPID=y
+CFG_SUNXI_EFUSE =y
+
+#key
+#CFG_SUNXI_PHY_KEY=y
+#CFG_LRADC_KEY=y
+#CFG_GPADC_KEY=y
+
+#sunxi nsi
+CFG_SUNXI_NSI=y
+
+#sunxi selet dram para
+CFG_SUNXI_SELECT_DRAM_PARA=y
+
+#sunxi smc
+CFG_SUNXI_SMC_30=y
